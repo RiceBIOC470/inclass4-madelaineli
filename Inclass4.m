@@ -42,7 +42,8 @@ function Inclass4()
             end
         end
     end
-    logical = sum_greater_than_ten([1,2,3,4,5,6,0])
+    logical = sum_greater_than_ten([1,2,3,4,5,6,0]);
+    disp(logical)
 end
 
 % 2. Write a function that takes an array as input and returns a logical
