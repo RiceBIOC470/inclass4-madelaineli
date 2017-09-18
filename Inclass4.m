@@ -1,3 +1,5 @@
+% AW: Good job. 0.99/1.
+
 %Inclass assignment 4. Due at the start of class on 9/12/17
 function Inclass4()
 %1. (a) Write code that makes a file with the words "Random numbers 1" on its
@@ -25,6 +27,7 @@ function Inclass4()
     type inclass4.txt
 
     %part b
+    %AW: This works - you only needed the info in array 1, not array 2 but that is good as well. 
     fid = fopen(filename, 'r');
     array_1 = [];
     array_2 = [];
@@ -49,6 +52,11 @@ end
 % 2. Write a function that takes an array as input and returns a logical
 % variable which is true if the sum of the numbers in the array is greater
 % than or equal to 10 and false if it is less than 10. 
+
+%AW: this is basically fine, but note that logically is a builtin matlab keyword. Inside your function, 
+%you will have overiden it and replaced it with your variable.
+
+%AW: also, this doesn't give the right answer if the sum is exactly 10 - should have been >=. -0.01.
 function logical = sum_greater_than_ten(A)
     logical = sum(A)>10;
 end
